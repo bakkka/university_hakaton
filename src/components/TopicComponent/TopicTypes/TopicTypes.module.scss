@@ -1,0 +1,38 @@
+.block{
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  .header{
+    display: flex;
+    gap: 14px;
+    p{
+      color: var(--blue-gray-500, #607D8B);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 170%; /* 27.2px */
+    }
+  }
+  .information{
+    padding: 0px 60px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    .information_block{
+      display: flex;
+      gap: 3px;
+      .block_article{
+        color: var(--blue-gray-500, #607D8B);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 170%; /* 23.8px */
+      }
+      .block_deadline{
+        color: var(--blue-gray-500, #607D8B);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 170%; /* 23.8px */
+      }
+    }
+  }
+}

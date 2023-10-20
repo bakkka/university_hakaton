@@ -1,23 +1,24 @@
 .content{
-  margin-top: 120px;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 .options{
   width: 302px;
+  height: 557px;
   display: flex;
   flex-direction: column;
   gap: 30px;
   .progress{
     width: 100%;
-    height: 557px;
+    height: 100%;
     background: white;
     border-radius: 16px;
     box-shadow: 0px 1px 3px 0px #0000001A;
     .progress_content{
-      width: 90%;
-      margin: 20px auto 0 auto ;
+      width: 100%;
+      padding: 24px;
+      box-sizing: border-box;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -29,8 +30,10 @@
         width: 100%;
         flex-direction: column;
         margin-top: 20px;
+        max-height: 460px;
+        overflow-y: auto;
         .lesson{
-          width: 100%;
+          width: 95%;
           display: flex;
           flex-direction: column;
           margin-bottom: 5px;
@@ -52,6 +55,7 @@
             .progress_bar{
               width: 75%;
               height: 5px;
+              border-radius: 10px;
               background: linear-gradient(to right, #4CAF50 50%, #ECEFF1 50%);
             }
             .progress_percentage{
@@ -72,51 +76,28 @@
     border-radius: 16px;
     box-shadow: 0px 1px 3px 0px #0000001A;
     .track_content{
-      width: 85%;
+      width: 100%;
+      padding: 24px;
+      box-sizing: border-box;
       display: flex;
       flex-direction: column;
-      margin: 20px auto 0 auto ;
       align-items: flex-start;
       gap: 15px;
+      .line{
+        width: 100%;
+        height: 1px;
+        background: #ECEFF1;
+      }
       .contacts_main{
         width: 100%;
         display: flex;
         flex-direction: column;
-        margin-top: 15px;
+        margin-top: -15px;
         max-height: 260px;
         overflow-y: auto;
         margin-right: 15px;
-        .person{
-          display: flex;
-          margin-bottom: 10px;
-          position: relative;
-          .person_photo{
-            border: 2px solid white;
-            margin-right: 10px;
-            border-radius: 50%;
-          }
-          .person_info{
-            display: flex;
-            flex-direction: column;
-            .person_name{
-              font-weight: 600;
-              font-size: 16px;
-              line-height: 24px;
-              color: #212121;
-            }
-            .person_group{
-              font-weight: 500;
-              font-size: 14px;
-              line-height: 21px;
-              color: #607D8B;
-            }
-          }
-          svg{
-            position: absolute;
-            left: 80%;
-            top: 20%;
-            cursor: pointer;
-          }
+        .person:nth-child(1){
+          margin-top: 15px;
         }
       }
       .track_name{
@@ -132,15 +113,16 @@
   }
   .track_preview{
     width: 100%;
-    height: 157px;
+    min-height: 156px;
     background: white;
     border-radius: 16px;
     box-shadow: 0px 1px 3px 0px #0000001A;
     .track_content{
-      width: 85%;
+      width: 100%;
+      padding: 24px;
+      box-sizing: border-box;
       display: flex;
       flex-direction: column;
-      margin: 20px auto 0 auto ;
       align-items: flex-start;
       gap: 15px;
       .track_name{
@@ -151,7 +133,7 @@
       }
       .track_students{
         position: relative;
-        right: 0;
+        //right: 0;
         img{
           position: absolute;
           z-index: 1;
@@ -201,9 +183,32 @@
 .main{
   width: 1040px;
   background: white;
-  height: 1150px;
+  min-height: 1150px;
   border-radius: 16px;
   box-shadow: 0px 1px 3px 0px #0000001A;
+  .main_content{
+    padding: 24px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    .content_header{
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      svg{
+        cursor: pointer;
+      }
+      p{
+        color: #212121;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 24px */
+      }
+    }
+  }
 }
 .active{
   background: #ECEFF1;

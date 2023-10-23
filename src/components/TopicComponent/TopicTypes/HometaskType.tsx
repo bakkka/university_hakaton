@@ -1,7 +1,11 @@
 import React, {FC} from 'react';
 import styles from "./TopicTypes.module.scss";
-
-const HometaskType:FC = () => {
+import {ITask} from "../../../types/CoursesResponse";
+interface props{
+    onClick: () => void;
+    data:ITask
+}
+const HometaskType:FC<props> = ({data}) => {
     return (
         <div className={styles.block}>
             <div className={styles.header}>
@@ -13,11 +17,11 @@ const HometaskType:FC = () => {
             <div className={styles.information}>
                 <div className={styles.information_block}>
                     <p className={styles.block_article}>Открыт с :</p>
-                    <p className={styles.block_deadline}>3 октября 2023, 00:00</p>
+                    <p className={styles.block_deadline}>{`${data.openedAt.hour}:${data.openedAt.minute}`}</p>
                 </div>
                 <div className={styles.information_block}>
                     <p className={styles.block_article}>Срок сдачи :</p>
-                    <p className={styles.block_deadline}>4 октября 2023, 00:00</p>
+                    <p className={styles.block_deadline}>{`${data.closedAt.hour}:${data.closedAt.minute}`}</p>
                 </div>
             </div>
         </div>

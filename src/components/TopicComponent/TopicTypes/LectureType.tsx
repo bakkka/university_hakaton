@@ -1,7 +1,9 @@
 import React, {FC} from 'react';
 import styles from "./TopicTypes.module.scss";
-
-const LectureType:FC = () => {
+interface props {
+    onClick: () => void;
+}
+const LectureType:FC<props> = () => {
     return (
         <div className={styles.block}>
             <div className={styles.header}>

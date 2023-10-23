@@ -11,6 +11,7 @@ interface props{
     active?:boolean | false
     type?:string;
     page?:'schedule' | 'attendance'
+    onClick?: () => void;
 }
 const LessonComponent:FC<props> = ({time_start,height,page,active,time_end,lesson_name,teacher_name,type}) => {
     return (
@@ -28,7 +29,9 @@ const LessonComponent:FC<props> = ({time_start,height,page,active,time_end,lesso
                     <OfflineType></OfflineType>
                 ) : type === 'Пр' ? (
                     <OnlineType></OnlineType>
-                ) : null}
+                ) : (
+                    <OnlineType></OnlineType>
+                )}
             </div>
         </div>
     );

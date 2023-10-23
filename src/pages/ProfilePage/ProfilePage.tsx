@@ -4,7 +4,10 @@ import styles from './ProfilePage.module.scss'
 import picture from '../../images/Аватарка.png'
 import background from '../../images/image 6.png'
 import ExperienceComponent from "../../components/ExperienceComponent/ExperienceComponent";
+import {useTypedSelector} from "../../hooks/redux";
 const ProfilePage:FC = () => {
+    const profile = useTypedSelector(state => state.userReducer.data)
+
     return (
         <Container>
             <div className={styles.content}>
@@ -23,7 +26,7 @@ const ProfilePage:FC = () => {
                                 </div>
                             </div>
                             <div className={styles.general_info}>
-                                <p>Гарик Мкртчян</p>
+                                <p>{profile.full_name}</p>
                                 <p>Ui/Ux Designer</p>
                             </div>
                         </div>
@@ -51,7 +54,7 @@ const ProfilePage:FC = () => {
                                             <path id="Vector" d="M2 3C2 2.73478 2.10536 2.48043 2.29289 2.29289C2.48043 2.10536 2.73478 2 3 2H5.153C5.38971 2.00011 5.6187 2.08418 5.79924 2.23726C5.97979 2.39034 6.10018 2.6025 6.139 2.836L6.879 7.271C6.91436 7.48222 6.88097 7.69921 6.78376 7.89003C6.68655 8.08085 6.53065 8.23543 6.339 8.331L4.791 9.104C5.34611 10.4797 6.17283 11.7293 7.22178 12.7782C8.27072 13.8272 9.52035 14.6539 10.896 15.209L11.67 13.661C11.7655 13.4695 11.9199 13.3138 12.1106 13.2166C12.3012 13.1194 12.5179 13.0859 12.729 13.121L17.164 13.861C17.3975 13.8998 17.6097 14.0202 17.7627 14.2008C17.9158 14.3813 17.9999 14.6103 18 14.847V17C18 17.2652 17.8946 17.5196 17.7071 17.7071C17.5196 17.8946 17.2652 18 17 18H15C7.82 18 2 12.18 2 5V3Z" fill="#90A4AE"/>
                                         </g>
                                     </svg>
-                                    <p>+7 (987) 818 78 78</p>
+                                    <p>{profile.phone_number}</p>
                                 </div>
                                 <div className={styles.other_block}>
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -59,7 +62,7 @@ const ProfilePage:FC = () => {
                                             <path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M5 3C4.46957 3 3.96086 3.21071 3.58579 3.58579C3.21071 3.96086 3 4.46957 3 5V15C3 15.5304 3.21071 16.0391 3.58579 16.4142C3.96086 16.7893 4.46957 17 5 17H15C15.5304 17 16.0391 16.7893 16.4142 16.4142C16.7893 16.0391 17 15.5304 17 15V5C17 4.46957 16.7893 3.96086 16.4142 3.58579C16.0391 3.21071 15.5304 3 15 3H5ZM5 5H15V12H13L12 14H8L7 12H5V5Z" fill="#90A4AE"/>
                                         </g>
                                     </svg>
-                                    <p>bf2042help@mail.com</p>
+                                    <p>{profile.email}</p>
                                 </div>
                                 <div className={styles.other_block}>
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -74,7 +77,6 @@ const ProfilePage:FC = () => {
                     </div>
                 </div>
                 <div className={styles.background}></div>
-                <ExperienceComponent></ExperienceComponent>
             </div>
         </Container>
     );

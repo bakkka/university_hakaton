@@ -4,10 +4,11 @@ interface props{
     children?:string | ReactNode;
     onClick: () => void;
     background?:string
+    height?:number
 }
-const AcceptButton:FC<props> = ({children,background, onClick}) => {
+const AcceptButton:FC<props> = ({children,background,height, onClick}) => {
     return (
-        <button className={styles.button} style={{background: background ? background : ''}} onClick={onClick}>{children ? children : 'готово'}</button>
+        <button className={styles.button} style={{background: background ? background : '', height:height}} onClick={onClick}>{children ? children : 'готово'}</button>
     );
 };
 

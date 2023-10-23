@@ -63,6 +63,7 @@
             background: #ECEFF1;
             display: flex;
             align-items: center;
+            position: relative;
             .date_content{
               width: 100%;
               background: #ECEFF1;
@@ -71,6 +72,35 @@
               display: flex;
               align-items: center;
               cursor: pointer;
+              .date_list{
+                width: 167px;
+                height: 178px;
+                border-radius: 16px;
+                background: var(--white, #FFF);
+                box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.10), 0px 1px 3px 0px rgba(0, 0, 0, 0.10);
+                position: absolute;
+                .date_list_content{
+                  padding: 24px 12px 24px 12px;
+                  box-sizing: border-box;
+                  width: 100%;
+                  .scrollBlock{
+                    margin: 0 auto;
+                    width: 100px;
+                    max-height: 150px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    overflow-y: auto;
+                    div{
+                      color: var(--blue-gray-500, #607D8B);
+                      font-size: 14px;
+                      font-weight: 500;
+                      line-height: 150%; /* 21px */
+                      width: 100%;
+                    }
+                  }
+                }
+              }
               p{
                 color: var(--blue-gray-500, #607D8B);
                 font-size: 14px;

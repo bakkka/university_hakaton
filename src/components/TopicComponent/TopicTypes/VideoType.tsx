@@ -1,7 +1,10 @@
 import React, {FC} from 'react';
 import styles from "./TopicTypes.module.scss";
 
-const VideoType:FC = () => {
+interface props {
+    onClick: () => void;
+}
+const VideoType:FC<props> = () => {
     return (
         <div className={styles.block}>
             <div className={styles.header}>

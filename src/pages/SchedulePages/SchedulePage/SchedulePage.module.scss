@@ -1,0 +1,199 @@
+p{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.schedule{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.block{
+  min-width: 32%;
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  position: relative;
+  .block_info{
+    max-width: 269px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    .block_info_time{
+      font-weight: 600;
+      font-size: 18px;
+      font-family: "Roboto Flex";
+      line-height: 27px;
+    }
+    .block_info_amount{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+    }
+    svg{
+      position: absolute;
+      right: 5%;
+      cursor: pointer;
+    }
+  }
+  .block_content{
+    display: flex;
+    flex-direction: column;
+    padding: 24px 28px 24px 28px;
+    border-radius: 16px;
+    gap: 16px;
+    background: white;
+    box-shadow: 0px 1px 3px 0px #0000001A;
+    .lesson{
+      margin-bottom: 20px;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      height: 50px;
+      align-items: center;
+      .time{
+        display: flex;
+        flex-direction: column;
+        .time_start{
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 24px;
+          color: #212121;
+          font-family: "Roboto Flex";
+        }
+        .time_end{
+          font-weight: 500;
+          font-size: 14px;
+          font-family: "Roboto Flex";
+          line-height: 21px;
+          color: #607D8B;
+          text-align: right;
+        }
+      }
+      .main{
+        display: flex;
+        flex-direction: column;
+        .main_name{
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 24px;
+          color: #212121
+        }
+        .main_teacher{
+          font-family: "Roboto Flex";
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 21px;
+          color: #607D8B;
+        }
+      }
+    }
+  }
+}
+.block:nth-child(3){
+  margin-right: 0;
+}
+.block:nth-child(6){
+  margin-right: 0;
+}
+.legend{
+  width: 467px;
+  height: 73px;
+  background: white;
+  padding: 24px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  border: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  .legend_block{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    div{
+      margin-right: 5px;
+    }
+  }
+  .group_block{
+    width: 76px;
+    height: 29px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 8px 5px 12px;
+    border-radius: 8px;
+    background: #ECEFF1;
+    cursor: pointer;
+    p{
+      color: var(--blue-gray-500, #607D8B);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 150%; /* 21px */
+    }
+  }
+  .group_list{
+    width: 124px;
+    height: 178px;
+    top: -260%;
+    right: 0%;
+    border-radius: 16px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.10), 0px 1px 3px 0px rgba(0, 0, 0, 0.10);
+    position: absolute;
+    .list_content{
+      padding: 24px;
+      box-sizing: border-box;
+      width: 100%;
+      .scrollBlock {
+        width: 76px;
+        max-height: 150px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        overflow-y: auto;
+        .content_block {
+          cursor: pointer;
+          width: 80%;
+          min-height: 29px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: var(--blue-gray-500, #607D8B);
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 150%; /* 21px */
+        }
+        .content_blockActive{
+          cursor: pointer;
+          width: 80%;
+          min-height: 29px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 8px;
+          background: #ECEFF1;
+          color: var(--blue-gray-500, #607D8B);
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 150%; /* 21px */
+        }
+      }
+    }
+  }
+}
+
+

@@ -5,6 +5,7 @@ import picture from '../../images/TestPicture2.png'
 import InfoComponent from "../../components/InfoComponent/InfoComponent";
 import SearchBarComponent from "../../components/SearchBarComponent/SearchBarComponent";
 import ContactsComponent from "../../components/ContactsComponent/ContactsComponent";
+import UnavailablePageComponent from "../../components/UnavailablePageComponent/UnavailablePageComponent";
 const ChatPage:FC = () => {
     const [active, setActive] = useState(0)
     return (

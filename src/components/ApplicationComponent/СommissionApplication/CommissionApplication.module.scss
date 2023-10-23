@@ -177,42 +177,6 @@
             font-weight: 400;
             line-height: 19.6px;
             position: relative;
-            .status_review{
-              left: -15%;
-              top: 45%;
-              background: #1A73E7;
-              width: 6px;
-              height: 6px;
-              border-radius: 50%;
-              position: absolute;
-            }
-            .status_declined{
-              left: -15%;
-              top: 45%;
-              background: #F44334;
-              width: 6px;
-              height: 6px;
-              border-radius: 50%;
-              position: absolute;
-            }
-            .status_accepted{
-              left: -15%;
-              top: 45%;
-              background: #4CAF50;
-              width: 6px;
-              height: 6px;
-              border-radius: 50%;
-              position: absolute;
-            }
-            .status_waiting{
-              left: -15%;
-              top: 45%;
-              background: #FFB300;
-              width: 6px;
-              height: 6px;
-              border-radius: 50%;
-              position: absolute;
-            }
           }
         }
       }

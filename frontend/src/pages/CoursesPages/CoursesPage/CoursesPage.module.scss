@@ -1,0 +1,18 @@
+
+    .content_header{
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      svg{
+        cursor: pointer;
+      }
+      p{
+        color: #212121;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 24px */
+      }
+    }
+

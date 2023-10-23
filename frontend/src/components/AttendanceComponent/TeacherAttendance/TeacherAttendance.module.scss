@@ -1,0 +1,310 @@
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  .lessons{
+    display: flex;
+    width: 563px;
+    flex-direction: column;
+    gap: 28px;
+    .current{
+      width: 100%;
+      height: 158px;
+      border-radius: 16px;
+      background: #FFF;
+      box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 3px -1px rgba(0, 0, 0, 0.10);
+      .current_content{
+        width: 100%;
+        padding: 24px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        .article{
+          color: #212121;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 150%; /* 24px */
+        }
+        .lesson_content{
+          width: 100%;
+          padding: 12px;
+          box-sizing: border-box;
+          background: #ECEFF1;
+          height: 74px;
+          display: flex;
+          align-items: center;
+          border-radius: 16px;
+        }
+      }
+    }
+    .all{
+      width: 100%;
+      height: 581px;
+      border-radius: 16px;
+      background: #FFF;
+      box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 3px -1px rgba(0, 0, 0, 0.10);
+      .all_content{
+        width: 100%;
+        padding: 24px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        .header{
+          width: 100%;
+          display: flex;
+          gap: 24px;
+          .header_date{
+            width: 119px;
+            height: 37px;
+            border-radius: 8px;
+            background: #ECEFF1;
+            display: flex;
+            align-items: center;
+            position: relative;
+            .date_content{
+              width: 100%;
+              background: #ECEFF1;
+              padding: 0px 8px 0px 12px;
+              box-sizing: border-box;
+              display: flex;
+              align-items: center;
+              cursor: pointer;
+              .date_list{
+                width: 167px;
+                height: 178px;
+                border-radius: 16px;
+                background: var(--white, #FFF);
+                box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.10), 0px 1px 3px 0px rgba(0, 0, 0, 0.10);
+                position: absolute;
+                .date_list_content{
+                  padding: 24px 12px 24px 12px;
+                  box-sizing: border-box;
+                  width: 100%;
+                  .scrollBlock{
+                    margin: 0 auto;
+                    width: 100px;
+                    max-height: 150px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    overflow-y: auto;
+                    div{
+                      color: var(--blue-gray-500, #607D8B);
+                      font-size: 14px;
+                      font-weight: 500;
+                      line-height: 150%; /* 21px */
+                      width: 100%;
+                    }
+                  }
+                }
+              }
+              p{
+                color: var(--blue-gray-500, #607D8B);
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 150%; /* 21px */
+              }
+            }
+          }
+        }
+        .list{
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          overflow-y: auto;
+          max-height: 480px;
+        }
+      }
+    }
+  }
+  .students{
+    width: 780px;
+    height: 610px;
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 3px -1px rgba(0, 0, 0, 0.10);
+    .students_content{
+      width: 98%;
+      padding: 24px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      .students_header{
+        width: 100%;
+        display: flex;
+       p{
+          color: var(--blue-gray-500, #607D8B);
+          font-size: 12px;
+          //width: 30%;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 140%; /* 16.8px */
+        }
+        p:nth-child(1){
+          width: 160px;
+          margin-left: 70px;
+          margin-right: 230px;
+        }
+        p:nth-child(2){
+          margin-right: 130px;
+        }
+      }
+      .list{
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        max-height: 550px;
+        overflow-y: auto;
+        .block{
+          width: 100%;
+          padding: 12px 29px 6px 16px;
+          box-sizing: border-box;
+          height: 54px;
+          display: flex;
+          .block_name{
+            width: 330px;
+            display: flex;
+            align-items: center;
+            margin-right: 116px;
+            gap: 17px;
+          }
+          .block_group{
+            color: #344767;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 140%; /* 22.4px */
+            margin-right: 147px;
+          }
+        }
+      }
+    }
+  }
+  .contacts{
+    width: 305px;
+    height: 742px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0px 1px 3px 0px #0000001A;
+    .contacts_content{
+      width: 100%;
+      padding: 24px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .track{
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        color: #212121;
+        margin-bottom: 15px;
+      }
+      .search{
+        width: 100%;
+      }
+      .contacts_main{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-left: 1%;
+        max-height: 650px;
+        overflow-y: auto;
+        .person{
+          display: flex;
+          width: 90%;
+          height: 64px;
+          padding: 10px;
+          box-sizing: border-box;
+          border-radius: 16px;
+          cursor: pointer;
+          position: relative;
+          align-items: center;
+          .person_photo{
+            margin-right: 10px;
+            border-radius: 50%;
+          }
+          .person_info{
+            display: flex;
+            flex-direction: column;
+            .person_name{
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 24px;
+              color: #212121;
+            }
+            .person_online{
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 21px;
+              color: #607D8B;
+            }
+          }
+          svg{
+            position: absolute;
+            left: 150%;
+            top: 20%;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .progress{
+    width: 302px;
+    height: 742px;
+  }
+  .student_attendance{
+    width: 710px;
+    height: 742px;
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 3px -1px rgba(0, 0, 0, 0.10);
+    .student_attendance_content{
+      padding: 24px;
+      box-sizing: border-box;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      .student_header{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 16px 0px 20px;
+        box-sizing: border-box;
+        p{
+          color: var(--blue-gray-500, #607D8B);
+          font-size: 12px;
+          font-weight: 700;
+          line-height: 140%; /* 16.8px */
+        }
+      }
+      .attendance_list{
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        max-height: 680px;
+        gap: 6px;
+        .block{
+          display: flex;
+          padding: 19px 29px 14px 16px;
+          justify-content: space-between;
+          box-sizing: border-box;
+          p{
+            color: #344767;
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%; /* 22.4px */
+          }
+        }
+      }
+    }
+  }
+}

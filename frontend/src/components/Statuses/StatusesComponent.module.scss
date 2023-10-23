@@ -1,0 +1,30 @@
+.status{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  width: 130px;
+  .blue{
+    background: #1A73E7;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+  .red{
+    background: #F44334;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+  .green{
+    background: #4CAF50;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+  .yellow{
+    background: #FFB300;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+}

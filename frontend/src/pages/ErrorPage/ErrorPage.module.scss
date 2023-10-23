@@ -1,0 +1,33 @@
+.block{
+  width: 468px;
+  height: 257px;
+  margin: 0 auto;
+  border-radius: 16px;
+  background: #FFF;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 3px -1px rgba(0, 0, 0, 0.10);
+  .content{
+    padding: 48px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    .code{
+      color: var(--gray-900, #212121);
+      text-align: center;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 150%; /* 30px */
+    }
+      .article{
+        color: var(--gray-900, #212121);
+        text-align: center;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 150%; /* 36px */
+      }
+    .button{
+      width: 126px;
+    }
+  }
+}
